@@ -1,13 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
+    margin: 0;
 }
 
-/* Section 1 & 5 */
+/* Section 1 & 6 */
 .header, .footer {
     display: flex;
-    padding: 25px 200px;
+    padding: 30px 200px;
     background-color: #1f2937;
     color: whitesmoke;
     align-items: center;
@@ -49,7 +50,8 @@ a {
     align-items: center;
     gap: 20px;
 
-    padding: 30px 200px;
+    padding-top: 30px;
+    padding-bottom: 80px;
     background-color: #1f2937;
 }
 
@@ -72,6 +74,7 @@ a {
     padding: 8px 23px;
     margin: 10px 0;
     border-radius: 5px;
+    font-size: inherit;
 }
 
 .hero-image {
@@ -82,11 +85,87 @@ a {
 }
 
 /* Section 3 */
-.profiles {
-    display: flex;
+.profile-panel {
+    padding: 80px;
+    text-align: center;
 }
 
-/* 
-* {
-    border: 1px solid red;
-} */
+.profile-panel h1 {
+    margin-top: 0;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 5px;
+}
+
+.profiles img {
+    border-radius: 10px;
+    border: 5px solid #3882F6;
+}
+
+/* Section 4 */
+.quote-panel {
+    background-color: #E5E7EB;
+    padding: 80px;
+}
+
+.quote-text {
+    font-size: 30px;
+    font-style: italic;
+    text-align: right;
+    /* New CSS not covered yet below */
+    display: table;
+    text-align: center;
+    margin: 0 auto; 
+    /* Margin auto centers the {display: table} on the page */
+}
+
+.quoter {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    font-style: normal; /* To replace {font-style: italic} applied to whole .quote-text */
+}
+
+/* Section 5 */
+.signup-panel {
+    padding: 80px;
+    display: flex;
+    justify-content: center;;
+}
+
+.signup-banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+
+    background-color: #3882F6;
+    padding: 30px 100px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.signup-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signup-button-alt {
+    background-color: inherit;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-weight: 500;
+    font-size: inherit;
+}
